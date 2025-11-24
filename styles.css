@@ -1,0 +1,310 @@
+body{
+    background-color: rgb(0, 0, 0);
+    background-image: url(Images/Backgrounds\ \(5.1\).png);
+    background-size: 100% auto;    /* full width, auto height */
+    background-position: top;      /* stick to the top */
+    background-repeat: no-repeat;  /* no tiling */
+    margin: 0; 
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 18px;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  color: rgb(115 115 115);
+  transition: stroke 0.3s ease 0.1s; /* smooth SVG color change */
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent) 0%, #ffffff 100%);
+    background-image: linear-gradient(360deg, #be185db4 0%, rgb(255, 255, 255) 100%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+h2 {
+    color:azure;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    color:azure;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+a, 
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+    color:azure;
+    font-weight: 500;
+}
+
+span {
+    font-size: 30px;
+    color:rgba(131, 24, 67, 0.432);
+}
+
+.bio-sub {
+    color:#D4D4D4;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center; 
+}
+
+.info {
+    color:#A3A3A3;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.rights {
+    color:#737373;
+    font-size: 14px;
+}
+
+.country {
+    font-weight: 500;
+    color: azure;
+    margin: 0;
+}
+
+.img-info {
+    width: 50px;       /* adjust size as needed */
+    height: 50px;      /* keep width and height equal */
+    border-radius: 12px; /* makes it perfectly round */
+    object-fit: cover;  /* ensures image fills the circle without stretching */
+    display: block;     /* optional: removes inline spacing */
+    background: linear-gradient(135deg, #BE185D, #E11D48);
+    box-shadow: 0 0px 20px rgba(255, 105, 180, 0.1);
+    padding: 10px;
+}
+
+.img-author {
+    cursor: pointer;
+    width: 128px;       /* adjust size as needed */
+    height: 128px;      /* keep width and height equal */
+    border-radius: 50%; /* makes it perfectly round */
+    object-fit: cover;  /* ensures image fills the circle without stretching */
+    display: block;     /* optional: removes inline spacing */
+    margin-bottom: 24px;
+    box-shadow: 0 0px 40px rgba(255, 105, 180, 0.3);
+}
+
+.img-book {
+    width: 64px;       /* adjust size as needed */
+    height: 64px;      /* keep width and height equal */
+    border-radius: 5px;
+}
+
+.rounded-card-big {
+    padding: 32px;
+    margin-bottom: 48px;
+    border-radius: 20px;
+    background-color: #171717;
+    border: 1px solid rgba(131, 24, 67, 0.3);
+    box-shadow: 0 0px 20px rgba(255, 105, 180, 0.2);
+}   
+
+.rounded-card-small {
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #171717;
+    border: 1px solid rgba(119, 119, 119, 0.2);
+    cursor:pointer;
+    transition: transform 0.3s ease 0.1s, color 0.3s ease 0.1s; /* delayed scale & color */
+}
+
+/* Hover effect */
+.rounded-card-small:hover {
+    transform: scale(1.03); /* slightly bigger */
+    color: #FF99C8; /* light pink for text */
+    border: 1px solid #FF99C8;
+    background: linear-gradient(135deg, #be185db4, #e11d47c5);
+}
+
+.rounded-card-small:hover svg {
+    stroke: #FF99C8; /* light pink for SVG */
+}
+
+.rounded-card-small:hover span {
+    color: #FF99C8; /* light pink for SVG */
+}
+
+.rounded-button-small {
+    padding: 12px 24px;
+    border-radius: 30px;
+    background-color: #262626;
+    margin-bottom: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* smooth hover transition */
+}
+
+.rounded-button-small:hover {
+    transform: scale(1.04); /* slightly bigger */
+    box-shadow: 0 10px 20px rgba(190, 24, 93, 0.2); /* pink shadow */
+    background: linear-gradient(135deg, #BE185D, #E11D48); /* keeps gradient */
+}
+
+.rounded-button-big {
+    padding: 16px 24px;
+    width: 100%;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #BE185D, #E11D48);
+    cursor: pointer;
+    transition: all 0.3s ease; /* smooth hover transition */
+}
+
+.rounded-button-big:hover {
+    transform: scale(1.04); /* slightly bigger */
+    box-shadow: 0 10px 10px rgba(190, 24, 93, 0.1); /* pink shadow */
+    background: linear-gradient(135deg, #be185db4, #e11d47b6); /* keeps gradient */
+    outline: 1px solid #FF99C8; /* visually like a border */
+}
+
+.social-media-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icon-ig {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-tooltip .tooltip-inner {
+    background-color: #222; /* dark background */
+    color: #fff;            /* white text */
+    font-size: 0.875rem;
+}
+
+.custom-tooltip.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+.custom-tooltip.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: #22222200;
+}
+
+h3 span {
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text; /* for Chrome/Safari */
+    color: transparent; /* make text itself show the gradient */
+}
+
+
+/* Gradients per country */
+.usa {
+    background-image: linear-gradient(to right, #0072ff, #00c6ff); /* blue gradient */
+}
+
+.uk {
+    background-image: linear-gradient(to right, #ff0000, #ffffff, #000080); /* UK colors */
+}
+
+.germany {
+    background-image: linear-gradient(to right, #3f3f3f, #ff0000, #ffcc00); /* German colors */
+}
+
+.japan {
+    background-image: linear-gradient(to right, #ffffff, #bc002d); /* white to red */
+}
+
+.canada {
+    background-image: linear-gradient(to right, #ff0000, #ffffff); /* red and white */
+}
+
+.spain {
+    background-image: linear-gradient(to right, #ff0000, #ffcc00, #ff0000);
+}
+
+.france {
+    background-image: linear-gradient(to right, #0055a4, #ffffff, #ef4135);
+}
+
+.italy {
+    background-image: linear-gradient(to right, #008C45, #ffffff, #cd212a);
+}
+
+.netherlands {
+    background-image: linear-gradient(to right, #21468B, #ffffff, #ff4f00);
+}
+
+.sweden {
+    background-image: linear-gradient(to right, #006aa7, #fecc00);
+}
+
+.poland {
+    background-image: linear-gradient(to right, #ffffff, #dc143c);
+}
+
+.australia {
+    background-image: linear-gradient(to right, #ffcc00, #0033a0);
+}
+
+.belgium {
+    background-image: linear-gradient(to right, #3f3f3f, #ffdd00, #ff0000); /* Belgian flag colors */
+}
+
+.ireland {
+    background-image: linear-gradient(to right, #169b62, #ffffff, #ff883e); /* Irish flag colors */
+}
+
+
+/* When screen width is smaller than 1024px (lg breakpoint) */
+@media (max-width: 500px) {
+    body {
+        background-image: url("Images/Backgrounds\ \(6\).png");
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    .bio-sub {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1400px) {
+    body {
+        background-image: none
+    }
+}
