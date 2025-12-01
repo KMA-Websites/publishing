@@ -19,9 +19,7 @@ KMA Publishing is the name I use to sell my work — my legal identity as a crea
 
 ## 🌐 More From Me
 
-- **Main Linktree:** https://kma-websites.github.io/kma-linktree/  
-- **Courses:** https://kma-courses.netlify.app/  
-- **Projects Hub:** https://kma-websites.github.io  
+- **Main Linktree:** https://kma-websites.github.io/linktree/   
 
 ---
 
