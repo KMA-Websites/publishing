@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(0, 0, 0);
-    background-image: url(Images/Backgrounds\ \(5.1\).png);
+    background-color: #111111;
+    
     background-size: 100% auto;    /* full width, auto height */
     background-position: top;      /* stick to the top */
     background-repeat: no-repeat;  /* no tiling */
@@ -132,14 +132,14 @@ span {
     border-radius: 20px;
     background-color: #171717;
     border: 1px solid rgba(131, 24, 67, 0.3);
-    box-shadow: 0 0px 20px rgba(255, 105, 180, 0.2);
+    box-shadow: 0 0px 20px rgba(255, 105, 180, 0.322);
 }   
 
 .rounded-card-small {
     padding: 16px;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #171717;
-    border: 1px solid rgba(119, 119, 119, 0.2);
+    border: 1px solid rgba(87, 69, 77, 0.692);
     cursor:pointer;
     transition: transform 0.3s ease 0.1s, color 0.3s ease 0.1s; /* delayed scale & color */
 }
