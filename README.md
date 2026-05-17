@@ -17,7 +17,7 @@ KMA Publishing is the name I use to sell my work — my legal identity as a crea
 
 - [KMA Linktree](https://kma-websites.github.io/linktree/)   
 
-## 📬 Stay Connected
+## Socials
 
 - [GitHub](https://github.com/NilaDoze)
 - [Instagram](https://www.instagram.com/taigachan.0012)  
